@@ -1,0 +1,74 @@
+
+This file lists modules PyInstaller was not able to find. This does not
+necessarily mean these modules are required for running your program. Both
+Python's standard library and 3rd-party Python packages often conditionally
+import optional modules, some of which may be available only on certain
+platforms.
+
+Types of import:
+* top-level: imported at the top-level - look at these first
+* conditional: imported within an if-statement
+* delayed: imported within a function
+* optional: imported within a try-except-statement
+
+IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
+            tracking down the missing module yourself. Thanks!
+
+missing module named pwd - imported by posixpath (delayed, conditional, optional), shutil (delayed, optional), tarfile (optional), pathlib (delayed, optional), subprocess (delayed, conditional, optional), http.server (delayed, optional), webbrowser (delayed), getpass (delayed), netrc (delayed, conditional), psutil (optional)
+missing module named grp - imported by shutil (delayed, optional), tarfile (optional), pathlib (delayed, optional), subprocess (delayed, conditional, optional)
+missing module named _posixsubprocess - imported by subprocess (conditional), multiprocessing.util (delayed)
+missing module named fcntl - imported by subprocess (optional), psutil._compat (delayed, optional), keyboard._nixcommon (delayed)
+missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), zipimport (top-level)
+excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), zipimport (top-level)
+missing module named org - imported by pickle (optional)
+missing module named posix - imported by os (conditional, optional), posixpath (optional), shutil (conditional), importlib._bootstrap_external (conditional)
+missing module named resource - imported by posix (top-level)
+missing module named 'org.python' - imported by copy (optional), xml.sax (delayed, conditional)
+missing module named _posixshmem - imported by multiprocessing.resource_tracker (conditional), multiprocessing.shared_memory (conditional)
+missing module named _scproxy - imported by urllib.request (conditional)
+missing module named termios - imported by tty (top-level), getpass (optional), werkzeug._reloader (delayed, optional), click._termui_impl (conditional), psutil._compat (delayed, optional)
+missing module named 'java.lang' - imported by platform (delayed, optional), xml.sax._exceptions (conditional)
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing (top-level), multiprocessing.connection (top-level)
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing (top-level), multiprocessing.connection (top-level)
+missing module named multiprocessing.get_context - imported by multiprocessing (top-level), multiprocessing.pool (top-level), multiprocessing.managers (top-level), multiprocessing.sharedctypes (top-level)
+missing module named multiprocessing.TimeoutError - imported by multiprocessing (top-level), multiprocessing.pool (top-level)
+missing module named multiprocessing.set_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
+missing module named multiprocessing.get_start_method - imported by multiprocessing (top-level), multiprocessing.spawn (top-level)
+missing module named multiprocessing.Value - imported by multiprocessing (top-level), werkzeug.debug (top-level)
+missing module named pyimod02_importers - imported by C:\Users\Anmol\AppData\Local\Programs\Python\Python311\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_pkgutil.py (delayed)
+missing module named typing_extensions - imported by markupsafe (conditional), werkzeug.test (conditional), werkzeug.datastructures.mixins (conditional), werkzeug.datastructures.structures (conditional), werkzeug.datastructures.auth (conditional), werkzeug.datastructures.headers (conditional), werkzeug.datastructures.range (conditional), click._winconsole (conditional, optional), click.utils (conditional), click.types (conditional), click.decorators (conditional), jinja2.bccache (conditional), jinja2.utils (conditional), jinja2.async_utils (conditional), jinja2.runtime (conditional), jinja2.lexer (conditional), jinja2.nodes (conditional), jinja2.visitor (conditional), jinja2.idtracking (conditional), jinja2.compiler (conditional), jinja2.filters (conditional), jinja2.defaults (conditional), jinja2.parser (conditional), jinja2.environment (conditional), jinja2.ext (conditional), flask.config (conditional), itsdangerous.serializer (conditional), flask.sessions (conditional), urllib3.util.retry (conditional), urllib3._collections (conditional), urllib3.util.ssltransport (conditional), urllib3.connectionpool (conditional), urllib3.poolmanager (conditional), urllib3.contrib.emscripten.fetch (conditional), charset_normalizer.md (conditional, optional)
+missing module named asyncio.DefaultEventLoopPolicy - imported by asyncio (delayed, conditional), asyncio.events (delayed, conditional)
+missing module named '_typeshed.wsgi' - imported by werkzeug.exceptions (conditional), werkzeug.http (conditional), werkzeug.wsgi (conditional), werkzeug.utils (conditional), werkzeug.wrappers.response (conditional), werkzeug.test (conditional), werkzeug.datastructures.headers (conditional), werkzeug.formparser (conditional), werkzeug.wrappers.request (conditional), werkzeug.serving (conditional), werkzeug.debug (conditional), werkzeug.middleware.shared_data (conditional), werkzeug.local (conditional), werkzeug.routing.exceptions (conditional), werkzeug.routing.map (conditional), flask.typing (conditional), flask.ctx (conditional), flask.testing (conditional), flask.cli (conditional), flask.app (conditional)
+missing module named _typeshed - imported by werkzeug._internal (conditional), click.testing (conditional)
+missing module named 'watchdog.observers' - imported by werkzeug._reloader (delayed)
+missing module named 'watchdog.events' - imported by werkzeug._reloader (delayed)
+missing module named watchdog - imported by werkzeug._reloader (delayed)
+missing module named vms_lib - imported by platform (delayed, optional)
+missing module named java - imported by platform (delayed)
+missing module named _winreg - imported by platform (delayed, optional)
+missing module named readline - imported by cmd (delayed, conditional, optional), code (delayed, conditional, optional), pdb (delayed, optional), flask.cli (delayed, conditional, optional), rlcompleter (optional)
+missing module named bcrypt - imported by cryptography.hazmat.primitives.serialization.ssh (optional)
+missing module named cryptography.x509.UnsupportedExtension - imported by cryptography.x509 (optional), urllib3.contrib.pyopenssl (optional)
+missing module named dummy_threading - imported by requests.cookies (optional), psutil._compat (optional)
+missing module named AppKit - imported by keyboard._darwinkeyboard (top-level)
+missing module named Quartz - imported by keyboard._darwinkeyboard (top-level)
+missing module named Queue - imported by keyboard (optional), keyboard._nixcommon (optional), keyboard._generic (optional)
+missing module named regex - imported by pymem.pattern (optional)
+missing module named simplejson - imported by requests.compat (conditional, optional)
+missing module named backports - imported by urllib3.util.request (conditional, optional), urllib3.response (conditional, optional)
+missing module named compression - imported by urllib3.util.request (conditional, optional), urllib3.response (conditional, optional)
+missing module named 'h2.events' - imported by urllib3.http2.connection (top-level)
+missing module named 'h2.connection' - imported by urllib3.http2.connection (top-level)
+missing module named h2 - imported by urllib3.http2.connection (top-level)
+missing module named brotli - imported by urllib3.util.request (optional), urllib3.response (optional)
+missing module named brotlicffi - imported by urllib3.util.request (optional), urllib3.response (optional)
+missing module named socks - imported by urllib3.contrib.socks (optional)
+missing module named 'OpenSSL.crypto' - imported by urllib3.contrib.pyopenssl (delayed, conditional)
+missing module named OpenSSL - imported by urllib3.contrib.pyopenssl (top-level)
+missing module named chardet - imported by requests.compat (optional), requests (optional), requests.packages (optional)
+missing module named 'pyodide.ffi' - imported by urllib3.contrib.emscripten.fetch (delayed, optional)
+missing module named pyodide - imported by urllib3.contrib.emscripten.fetch (top-level)
+missing module named js - imported by urllib3.contrib.emscripten.fetch (top-level)
+missing module named asgiref - imported by flask.app (delayed, optional)
+missing module named dotenv - imported by flask.cli (delayed, optional)
+missing module named importlib_metadata - imported by flask.cli (delayed, conditional)

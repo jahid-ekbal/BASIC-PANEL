@@ -1,0 +1,70 @@
+{% macro Emulator(args) %}
+    <script src="{{url_for('static',filename='js/emulator.js')}}"></script>
+    <div id="emulator">
+    <div>
+        <h2>Emulator</h2>
+    </div>
+    <div>
+        <div id="button">
+            <button id="btn1" class="grow flex text-white items-center justify-center"  on:click={handle32Bit}>32bit</button>
+            <button id="btn2" class="grow flex items-center text-white justify-center" on:click={handle64Bit}>64bit</button>
+        </div>
+    </div>
+</div>
+<style>
+    #emulator {
+	 background-color: #1f2427;
+	 width: 100%;
+	 height: 6rem;
+	 border-radius: 10px;
+	 display: flex;
+	 flex-direction: row;
+}
+ #emulator div:nth-child(1) {
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 align-items: center;
+	 padding: 2rem;
+}
+ #emulator div:nth-child(1) h2 {
+	 color: white;
+	 font-size: larger;
+	 font-weight: 600;
+}
+ #emulator div:nth-child(2) {
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ #emulator div:nth-child(2) #button {
+	 box-sizing: border-box;
+	 border-radius: 10px;
+	 width: min-content;
+	 height: min-content;
+	 display: flex;
+	 border: 1px solid #1bbc9b;
+	 outline: 1px solid #1bbc9b;
+	 outline-offset: 1px;
+	 justify-content: space-around;
+	 padding: 0;
+	 width: 140px;
+	 height: 40px;
+	 overflow: hidden;
+}
+.active {
+	 height: 100%;
+	 whidth: 140px;
+	 color: white;
+	 background-color: #586fe4;
+}
+.inactive {
+	 height: 100%;
+	 color: black;
+	 background-color: white;
+}
+ 
+</style>
+{% endmacro %}

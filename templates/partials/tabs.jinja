@@ -1,0 +1,80 @@
+{% macro Tabs(num) %}
+    <div id="tabs" class="no-scrollbar h-30">
+        <div class="">
+            {% if num ==1 %}
+                
+                <a href="/dashboard" class="active">Headshot</a>
+            {% else %}
+                <a href="/dashboard" class="inactive">Headshot</a>
+                
+            {% endif %}
+            {% if num ==2 %}
+                
+                <a href="/sniper-panel" class="active">Sniper</a>
+            {% else %}
+                <a href="/sniper-panel" class="inactive">Sniper</a>
+                
+            {% endif %}
+            {% if num ==3 %}
+                
+                <a href="/extra-panel" class="active">Extra</a>
+            {% else %}
+                <a href="/extra-panel" class="inactive">Extra</a>
+                
+            {% endif %}
+            {% if num ==4 %}
+                
+                <a href="/settings" class="active">Settings</a>
+            {% else %}
+                <a href="/settings" class="inactive">Settings</a>
+                
+            {% endif %}
+            
+        </div>
+    </div>
+    <style>
+        #tabs {
+	 background-color: #1f2427;
+	 width: 100%;
+	 border-radius: 10px;
+	 display: flex;
+	 align-items: center;
+     color: white;
+}
+ #tabs div {
+	 display: flex;
+	 width: 100%;
+	 height: 100%;
+	 overflow-x: scroll;
+	 align-items: center;
+	 justify-content: space-between;
+	 gap: 1rem;
+	 padding: 1rem;
+}
+ #tabs div .button {
+	 color: white;
+}
+.active {
+	 color: white;
+	 background-color: #1bbc9b;
+	 padding: 1rem;
+	 border-radius: 10px;
+	 font-weight: 600;
+     height: 50px;
+     display: flex;
+     align-items: center;
+}
+.inactive {
+	 background-color: #363a40;
+	 padding: 1rem;
+	 border-radius: 10px;
+     border: 1px solid #1bbc9b;
+	 font-weight: 600;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+ 
+    </style>
+{% endmacro %}

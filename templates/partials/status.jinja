@@ -1,0 +1,74 @@
+{% macro Status(version) %}
+<script src="{{url_for('static',filename='js/status.js')}}"></script>
+<div id="status">
+    <div>
+        <h2>Status</h2>
+        <span>WELCOME TO AXC CORPORATION </>DEV: AXC ANMOL & ARPIT</span>
+    </div>
+    <div>
+        <button id="onlinebtn" class="border-[#1bbc9b] border">Offline</button>
+        <span>v{{version}}</span>
+    </div>
+</div>
+<style>
+    #status {
+	 background-color: #1f2427;
+	 height: 6rem;
+	 border-radius: 10px;
+	 display: flex;
+	 align-items: center;
+	 width: 100%;
+	 justify-content: space-between;
+}
+ #status div:nth-child(1) {
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 padding: 2rem;
+}
+ #status div:nth-child(1) h2 {
+	 font-size: larger;
+	 color: white;
+	 font-weight: 600;
+}
+ #status div:nth-child(1) span {
+	 font-size: medium;
+	 color: white;
+	 font-weight: 400;
+	 opacity: 60;
+}
+ #status div:nth-child(2) {
+	 display: flex;
+	 width: 100%;
+	 height: 100%;
+	 justify-content: center;
+	 align-items: center;
+	 gap: 1rem;
+}
+ #status div:nth-child(2) button {
+	 color: white;
+	 padding: 1rem;
+	 width: 100px;
+	 height: 3rem;
+	 display: flex;
+	 text-align: center;
+	 justify-content: center;
+	 align-items: center;
+	 border-radius: 10px;
+	 font-weight: 800;
+}
+ #status div:nth-child(2) span {
+	 color: white;
+}
+ .active {
+	 background-color: #1bbc9b;
+}
+ .inactive {
+	 background-color: #1f2427;
+	 border: 1px solid #1bbc9b;
+}
+ 
+</style>
+{% endmacro %}

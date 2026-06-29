@@ -1,0 +1,3 @@
+pip install waitress
+
+pyinstaller --onefile --noconsole --name "AXC_Corp" --add-data "templates;templates" --add-data "static;static" --add-data "dlls;dlls" --hidden-import=pymem --hidden-import=psutil --hidden-import=pyinjector --hidden-import=flask --hidden-import=waitress app.py

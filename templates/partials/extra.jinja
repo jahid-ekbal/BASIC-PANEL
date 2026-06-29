@@ -1,0 +1,67 @@
+{% macro Extra(args) %}
+    <script src="{{url_for('static',filename='js/extra.js')}}"></script>
+    <div id="headshot" class="divide-y bg-">
+        <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">Chams Menu</h2>
+                    <span class="text-white opacity-60">Apply Once. [INSERT]</span>
+                </div>
+                <div>
+                    <button id="chamsmenu" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Load</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">Chams 3D</h2>
+                    <span class="text-white opacity-60">Apply Once In Game</span>
+                </div>
+                <div>
+                    <button id="chams3d" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Load</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">M82B ESP</h2>
+                    <span class="text-white opacity-60">Apply in Login</span>
+                </div>
+                <div class="flex flex-wrap justify-end gap-2">
+                    <button id="mbEnable" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Enable</button>
+                    <button id="mbDisable" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Disable</button>
+                </div>
+            </div>
+        </div>
+        {# <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">Aim FOV</h2>
+                    <span class="text-white opacity-60">Apply In Game Once</span>
+                </div>
+                <div class="flex flex-wrap justify-end gap-2">
+                    <button id="fovEnable" class="bg-inherit text-white border border-blue-600 p-2 w-24 rounded-md">Enable</button>
+                    <button id="fovDisable" class="bg-inherit text-white border border-blue-600 p-2 w-24 rounded-md">Disable</button>
+                </div>
+            </div>
+        </div> #}
+    </div>
+    <style>
+        #headshot {
+            width: 100%;
+            height: min-content;
+            border-radius: 10px;
+            background-color: #1f2427;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 2rem;
+            padding-bottom: 1rem;
+            margin-bottom: 60px;
+        }
+        
+    </style>
+{% endmacro %}

@@ -1,0 +1,12 @@
+{% macro Console(args) %}
+<script src="{{url_for('static',filename='js/console.js')}}"></script>
+    <div class="absolute bottom-0 left-0">
+        <div class="bg-[#1F2427] justify-between w-screen rounded-t-md h-16 flex items-center text-white font-bold text-2xl p-2">
+            <span>Console</span>
+            <button class="text-xl " id="consolebtn">Open</button>
+        </div>
+        <div id="console" class="bg-slate-600 p-4 h-48 hidden flex flex-col gap-2 overflow-y-scroll">
+
+        </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,59 @@
+{% macro Sniper(args) %}
+    <script src="{{url_for('static',filename='js/sniper.js')}}"></script>
+    <div id="headshot" class="divide-y bg-">
+        
+
+
+        <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">Sniper Scope</h2>
+                    <span class="text-white opacity-60">Apply One Time In Login</span>
+                </div>
+                <div class="flex flex-wrap justify-end gap-2">
+                    <button id="swEnable" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Enable</button>
+                    <button id="swDisable" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Disable</button>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">Sniper Switch</h2>
+                    <span class="text-white opacity-60">Apply One Time In Login</span>
+                </div>
+                <div class="flex flex-wrap justify-end gap-2 w-fit">
+                    <button id="ssEnable" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Enable</button>
+                    <button id="ssDisable" class="bg-inherit text-white border border-[#1bbc9b] p-2 w-24 rounded-md">Disable</button>
+                </div>
+                
+            </div>
+        </div>
+        
+
+    
+
+
+
+
+    </div>
+    <style>
+        #headshot {
+            width: 100%;
+            height: min-content;
+            border-radius: 10px;
+            background-color: #1f2427;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 2rem;
+            padding-bottom: 1rem;
+            margin-bottom: 60px;
+        }
+        
+    </style>
+{% endmacro %}

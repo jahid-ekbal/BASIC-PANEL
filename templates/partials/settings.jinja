@@ -1,0 +1,39 @@
+{% macro Settings(args) %}
+    <script src="{{url_for('static',filename='js/settings.js')}}"></script>
+    <div id="headshot" class="divide-y bg-">
+        
+        <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">Username: <span class="text-white" id="username"></span> </h2>
+                    <span class="text-white opacity-60">HWID: <span class="text-white" id="hwid"></span></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="p-4 w-full h-full">
+            <div class="flex flex-row justify-between items-center h-full">
+                <div>
+                    <h2 class="text-white font-bold text-2xl">Expiry: <span  class="text-white" id="expiry"></span></h2>
+                    <span class="text-white opacity-60">Online Users: <span  class="text-white" id="onlineusers"></span></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <style>
+        #headshot {
+            width: 100%;
+            height: min-content;
+            border-radius: 10px;
+            background-color: #1f2427;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 2rem;
+            padding-bottom: 1rem;
+            margin-bottom: 60px;
+        }
+        
+    </style>
+{% endmacro %}
