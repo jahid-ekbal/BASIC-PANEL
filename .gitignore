@@ -1,0 +1,62 @@
+# Build artifacts
+build/
+dist/
+*.exe
+*.dll
+*.msi
+*.pkg
+*.dmg
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Logs and temp files
+*.log
+logs/
+*.tmp
+*.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# KeyAuth data
+C:/ProgramData/KeyAuth/
+
+# Spec files (PyInstaller builds)
+*.spec
+
+# Pip cache
+pip-log.txt
+pip-delete-this-directory.txt
